@@ -1,0 +1,37 @@
+@use "../../styles/util";
+
+.contact_page {
+  padding-bottom: 80px;
+  @include max(1199) {
+    padding-bottom: 25px;
+  }
+  @include max(767) {
+    padding-bottom: 0;
+  }
+  .contact_wrapper {
+    padding-top: 45px;
+    display: flex;
+    column-gap: 50px;
+    @include max(991) {
+      padding-top: 25px;
+      column-gap: 30px;
+    }
+    @include max(767) {
+      flex-wrap: wrap;
+      padding-top: 10px;
+      row-gap: 20px;
+    }
+  }
+  .contact_link {
+    flex: 0 0 200px;
+    max-width: 280px;
+    @include max(1023) {
+      flex: 0 0 220px;
+      max-width: 220px;
+    }
+    @include max(575) {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
